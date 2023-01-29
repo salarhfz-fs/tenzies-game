@@ -1,8 +1,8 @@
 import './Die.scss'
 
-function Die({ idx, number, isHeld, freeze }) {
+function Die({ idx, number, isHeld, holdDie }) {
     return (
-        <div className={`die ${isHeld ? 'die--held' : ''}`} onClick={() => freeze(idx, number)}>
+        <div className={`die ${isHeld ? 'die--held' : ''}`} onClick={() => holdDie(idx, number)}>
             {number}
         </div>
     )
