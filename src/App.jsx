@@ -1,8 +1,12 @@
+import GameBoard from './components/GameBoard'
+
 import './App.scss'
 
 function App() {
   return (
-    <h1>App</h1>
+    <div className="container">
+      <GameBoard />
+    </div>
   )
 }
 
